@@ -12,9 +12,29 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
+    <style>
+      .parent {
+      height: 90px;
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      background-color: DodgerBlue;
+    }
+
+    .parent > div {
+      background-color: #f1f1f1;
+      text-align: center;
+      margin: 3px;
+    }
+    </style>
 	</head>
 	<body>
 		<!-- Your layout here -->
+    <div class="parent">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>  
+    </div>
 
 	</body>
 </html>

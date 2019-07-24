@@ -12,9 +12,39 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
+    <style>
+      .parent {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      height: 300px;
+      width: 530px;  
+      background-color: DodgerBlue;
+    }
+
+    .parent > div {
+      background-color: #f1f1f1;
+      width: 80px;
+      height: 80px;
+      margin: 10px;
+      text-align: center;
+      font-size: 30px;
+    }
+   
+    </style>
 	</head>
 	<body>
 		<!-- Your layout here -->
+    <div class="parent">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
 
 	</body>
 </html>
